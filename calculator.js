@@ -22,7 +22,7 @@ result[0]=0
 console.log("result")
 First.textContent=`${store[0]} +`
 store[2]=""
- Second.textContent=``
+Second.textContent=``
 
 }
 else {
@@ -95,5 +95,27 @@ opbtn.addEventListener("click",function(e){
 });
 
 function operate(){
+
+  if(store[0]==null&& !entry.value){
+    entry.value=0
+  } else if(store[0]==null){
+    entry.value=entry.value
+  }
+  else if(store[1]=="+"){
+    if(!store[2] && !entry.value){
+      store[2]=0
+      console.log("operate empty second number")
+    }else if(!store[2]){
+      store[2]=entry.value
+      Second.textContent=`${store[2]} =`
+      result[0]=1
+     
+      console.log("made second number")
+    }
+    entry.value=parseInt(store[0])+parseInt(store[2])
+    First.textContent=`${store[0]} +`
+    store[0]=entry.value 
+   
+  }
   
 }

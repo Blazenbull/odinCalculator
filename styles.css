@@ -1,0 +1,47 @@
+.title{
+    display:flex;
+    justify-content: center;
+}
+.entry{
+    display:flex;
+    justify-content: center;
+}
+.overlay{
+    display:flex;
+    justify-content:center;
+    align-content: space-between;
+}
+.store{
+    display:flex;
+    justify-content: center;
+    border: 1px solid grey;
+   
+}
+
+.button-grid{
+   margin:15px;
+}
+
+.row{
+    display:flex;
+    justify-content: center;
+    height:30px;
+   
+}
+input{
+   
+    justify-content: center;
+    height:30px;
+    width:50px;
+   
+   
+}
+#entry{
+    height:35px;
+    justify-content: center;
+   width:auto;
+}
+
+#operate{
+    width:200px;
+}

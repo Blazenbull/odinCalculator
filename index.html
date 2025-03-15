@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="title">Calculator</h1>
+    <div class="overlay">
+        <div class="memory">
+            <div class="store" id="First">0</div>
+            <div class="store" id ="Second">0</div>
+        </div>
+    <div class="entry">  <input id="entry"></div>
+ 
+ 
+    </div>
+    <div class="button-grid">
+        <div class="row">
+            <input class="numberButton" type=button value=1>
+            <input class="numberButton" type=button value=2>
+            <input class="numberButton" type=button value=3>
+            <input id="addition" type=button value=+>
+        </div>
+        <div class="row">
+            <input class="numberButton" type=button value=4>
+            <input class="numberButton" type=button value=5>
+            <input class="numberButton" type=button value=6>
+            <input id="subtraction" type=button value=->
+        </div>
+        <div class="row">
+            <input class="numberButton" type=button value=7>
+            <input class="numberButton" type=button value=8>
+            <input class="numberButton" type=button value=9>
+            <input id="multiply" type=button value=*>
+        </div>
+        <div class="row">
+            <input class="zero" type=button value=0>
+            <input id="delete" type=button value=Del>
+            <input type=button value=.>
+            <input type=button value="/">
+        </div>
+        <div class="row">
+        <input id="operate" type=button value="=">
+        </div>
+   
+        
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

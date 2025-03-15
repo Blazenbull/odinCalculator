@@ -225,7 +225,7 @@ function divide(){
       console.log(store,"changed")
       First.textContent=`${store[0]} /`
       Second.textContent=`${store[2]} =`
-      entry.value=parseInt(store[0])/parseInt(store[2])
+      entry.value=parseFloat(store[0])/parseFloat(store[2])
       store[0]=entry.value 
       result[0]=1
       console.log(store,"result")
@@ -247,7 +247,7 @@ function divide(){
         console.log(store,"second number")
         First.textContent=`${store[0]} /`
         Second.textContent=`${store[2]} =`
-        entry.value=parseInt(store[0])/parseInt(store[2])
+        entry.value=parseFloat(store[0])/parseFloat(store[2])
         store[0]=entry.value 
         result[0]=1
         console.log(store,"result")
@@ -343,7 +343,7 @@ function operate(){
      
       console.log("made second number")
     }
-    entry.value=parseInt(store[0])/parseInt(store[2])
+    entry.value=parseFloat(store[0])/parseFloat(store[2])
     First.textContent=`${store[0]} /`
     store[0]=entry.value 
   }

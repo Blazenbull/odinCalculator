@@ -1,6 +1,4 @@
-/*
-1. need to work on / button 
-*/
+
 const entry = document.querySelector("#entry");
 const First=document.querySelector("#First");
 const Second=document.querySelector("#Second");

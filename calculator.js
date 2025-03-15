@@ -206,7 +206,10 @@ divbtn.addEventListener("click",function(e){
 })
 
 function divide(){
-    if (store[0]==null && !entry.value){
+    if(!entry.value){
+       entry.value="You Silly Goose"
+    }
+    else if (store[0]==null && !entry.value){
       entry.value="You Silly Goose"
     }
     else if(store[0]==null){
@@ -235,7 +238,7 @@ function divide(){
      
       }
       else if(store[2]=0){
-        entry.value="You Silly Goose"
+            entry.value="You Silly Goose"
         result[0]=1
         console.log(store,"result")
       }
@@ -323,6 +326,12 @@ function operate(){
   }
 
   else if(store[1]=="/"){
+    if (!entry.value){
+      entry.value="You Silly Goose"
+      console.log("goose")
+    }
+    else{
+      
     if(!store[2] && !entry.value || store[0]==""){
       store[0]=0
       store[2]=0
@@ -337,7 +346,7 @@ function operate(){
     entry.value=parseInt(store[0])/parseInt(store[2])
     First.textContent=`${store[0]} /`
     store[0]=entry.value 
-   
+  }
   }
 }  
 
